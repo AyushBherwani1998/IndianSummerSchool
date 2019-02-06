@@ -10,11 +10,10 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   temp = analogRead(LM35)/2;
-  if(temp>30){
-    digitalWrite(13,1);
-    }else{
+  (temp>30)?
+    digitalWrite(13,1):
       digitalWrite(13,0);
-      }
-  Serial.println(adcValue);
+      
+  Serial.println(temp);
   delay(1000);
 }
