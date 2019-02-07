@@ -10,5 +10,5 @@ void loop() {
   int moisture - analogRead(VAL_PROBE);
   Serial.println(moisture);
   if(mositure>MOISTURE)?digitalWrite(13,1):digitalWrite(13,0);
-  delay(100);
+  delay(5000 );
 }

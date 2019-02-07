@@ -15,6 +15,7 @@ void loop() {
         digitalWrite(led,1);
       }else if(data=='0'){
         digitalWrite(led,0);
+        delay()
         }
     }
 }
